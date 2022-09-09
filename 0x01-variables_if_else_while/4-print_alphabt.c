@@ -11,7 +11,7 @@ int main(void)
 {
 	char e;
 	char q;
-	cahr i;
+	char i;
 
 	e = 'e';
 	q = 'q';
