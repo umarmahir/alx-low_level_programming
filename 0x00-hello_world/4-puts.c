@@ -1,10 +1,10 @@
 #include<stdio.h>
 /*
- * main - This is the main function
+ * main - Entry point
  *
- * Description - It is the starting point for all executions
+ * Description: Print "Programming is like building a multilingual puzzle
  *
- * Returns Zero
+ * Return: Always 0 (Success)
  *
  */
 int main(void)
