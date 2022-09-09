@@ -9,7 +9,9 @@
 
 int main(void)
 {
-	char e, q ,i;
+	char e;
+	char q;
+	cahr i;
 
 	e = 'e';
 	q = 'q';
