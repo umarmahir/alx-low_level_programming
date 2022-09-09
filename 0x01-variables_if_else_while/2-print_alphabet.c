@@ -14,10 +14,9 @@ char c;
 int i;
 
 c = 'a';
-for (i = c; i <= 'z'; i++)
-{
-  putchar(c);
-  c++;
+for (i = c; i <= 'z'; i++){
+putchar(c);
+c++;
 }
 putchar('\n');
 return (0);
