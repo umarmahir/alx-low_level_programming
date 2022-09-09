@@ -1,7 +1,7 @@
 #include<stdio.h>
-/*Some little decc.*/
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	/*Some description*/
+	puts("\"Programming is like building a multilingual puzzle");
 		return (0);
 }
