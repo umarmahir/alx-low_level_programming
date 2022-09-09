@@ -14,7 +14,6 @@ int main(void)
 	int i;
 
 	c = 'a';
-	C = 'A';
 	for (i = c; i <= 'z'; i++)
 	{
 
