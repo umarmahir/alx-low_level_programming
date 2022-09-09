@@ -11,7 +11,6 @@ int main(void)
 {
 
 	char c;
-	char C;
 	int i;
 
 	c = 'a';
