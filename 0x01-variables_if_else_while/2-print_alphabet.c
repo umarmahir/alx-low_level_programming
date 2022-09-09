@@ -14,7 +14,8 @@ char c;
 int i;
 
 c = 'a';
-for (i = c; i <= 'z'; i++){
+for (i = c; i <= 'z'; i++)
+{
 putchar(c);
 c++;
 }
