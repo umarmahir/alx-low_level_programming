@@ -23,10 +23,10 @@ int main(void)
 		c++;
 	}
 
-	for (i = C; i <= 'Z'; i++)
+	for (i = 65; i <= 90; i++)
 	{
 
-		putchar(c);
+		putchar(i);
 		c++;
 	}
 	putchar('\n');
