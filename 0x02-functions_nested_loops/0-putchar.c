@@ -13,10 +13,11 @@ int main(void)
 	char *p = "_putchar";
 	int i;
 
-	while (p != '\0')
+	i = 0;
+	while (p[i] != '\0')
 	{
 		_putchar(p[i]);
-		p++;
+		i++;
 	}
 	_putchar('\n');
 
