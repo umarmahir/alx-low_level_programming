@@ -8,12 +8,13 @@
  */
 
 
-int main (void)
+int main(void)
 {
 	char *p = "_putchar";
+	int i;
 
 
-	for (int i = 0; p[i] != '\0', i++)
+	for (i = 0; p[i] != '\0'; i++;)
 	{
 		_putchar(p[i]);
 		p++;
