@@ -10,6 +10,14 @@
 
 int main(void)
 {
+	print_alphabet();
+
+	return (0);
+}
+
+
+void print_alphabet(void)
+{
 	char c = 'a';
 
 	while (c != '{')
@@ -18,6 +26,4 @@ int main(void)
 		c++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
