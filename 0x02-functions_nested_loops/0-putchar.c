@@ -12,9 +12,10 @@ int main(void)
 {
 	char *p = "_putchar";
 	int i;
+	int strl = strlen(p);
 
 
-	for (i = 0; p[i] != '\0'; i++)
+	for (i = 0; i < strl; i++)
 	{
 		_putchar(p[i]);
 		p++;
