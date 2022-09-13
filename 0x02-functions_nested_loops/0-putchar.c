@@ -12,10 +12,8 @@ int main(void)
 {
 	char *p = "_putchar";
 	int i;
-	int strl = strlen(p);
 
-
-	for (i = 0; i < strl; i++)
+	while (p != '\0')
 	{
 		_putchar(p[i]);
 		p++;
