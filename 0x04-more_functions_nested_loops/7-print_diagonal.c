@@ -21,9 +21,9 @@ void print_diagonal(int a)
 		space = i;
 		while (--space)
 		{
-			printf(" ");
+			_putchar(" ");
 		}
-		printf("\\\n");
+		_putchar("\\\n");
 		i++;
 	}
 }
