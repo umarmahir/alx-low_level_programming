@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * print_rev - Entry point
  *
@@ -11,18 +11,12 @@
 
 void print_rev(char *str)
 {
-	int i;
+	int length;
 
-	i = 0;
-	while (*str != '\0')
-	{
-		i++;
-		str++;
-	}
-	while (i >= 0)
+	length = len(str);
+	for (int i = (length - 1); i >= 0; i++)
 	{
 		_putchar(str[i]);
-		i--;
-     	}
+	}
 	_putchar('\n');
 }
