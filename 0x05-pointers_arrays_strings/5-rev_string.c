@@ -1,23 +1,23 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * rev_string - Entry point
- *
- * Description: 'The function that prints strings in reverse order'
- *
- * @str: The string to br displayed
- * Return: Always 0 (Success)
+ * rev_string - a function that reverse a string
+ * followed by a new line.
+ * @s: an input string
+ * Return: Nothing
  */
-
-void rev_string(char *str)
+void rev_string(char *s)
 {
-	int length;
-	int i;
+	int len = 0, i = 0;
+	char aux;
 
-	length = strlen(str);
-	for (i = (length - 1); i >= 0; i--)
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len--)
 	{
-		_putchar(str[i]);
+		aux = s[i];
+		s[i++] = s[len];
+		s[len] = aux;
 	}
-	_putchar('\n');
 }
