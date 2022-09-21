@@ -1,0 +1,8 @@
+#include "main.h"
+/**
+ * _strcat - Entry point
+ *
+ * Description: 'the program's description'
+ * @src: Source string
+ * Return: Always 0 (Success)
+ */
