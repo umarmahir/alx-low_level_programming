@@ -1,32 +1,18 @@
 #include "main.h"
-#include <string.h>
-
 /**
- * _strchr - Entry point
- *
- * Description: 'A pgrm that checks for a char in a string'
- * @s: The string to check on
- * @c: The char to check
- * Return: Always 0 (Success)
+ * _strchr - locates a character in a string,
+ * @s: string.
+ * @c: character.
+ * Return: the pointer to the first occurrence of the character c.
  */
-
 char *_strchr(char *s, char c)
 {
-	int i;
-	char **pp;
+	unsigned int i = 0;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
-		{
-			pp = &(s[i]);
-			return (pp);
-		}
-		if ((i == strlen(s) - 1) && (s[i] != c))
-		{
-			return (NULL);
-		}
-		i++;
-	}
+	for (; *(s + i) != '\0'; i++)
+		if (*(s + i) == c)
+			return (s + i);
+	if (*(s + i) == c)
+		return (s + i);
+	return ('\0');
 }
