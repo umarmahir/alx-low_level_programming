@@ -13,7 +13,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	char **pptr;
-	int i;
+	unsigned int i;
 
 	i = 0;
 	pptr = &s;
