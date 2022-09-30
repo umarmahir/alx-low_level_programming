@@ -1,18 +1,19 @@
-#include "main.h"
-#include <string.h>
+#include "main.h
+
 /**
- * main - Entry point
- *
- * Description: 'the program's description'
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Description: 'the program's description'
+* @argc: argument counter
+* @argv: the argument vector
+* Return: Always 0 (Success)
+*/
 
 int main(int argc, char** argv)
 {
 	int i;
 
-        i = 0;
+	i = 0;
 	while (*(argv) != '\0')
 	{
 		_putchar(*(argv + i));
