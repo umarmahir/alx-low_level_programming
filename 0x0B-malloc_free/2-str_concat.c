@@ -19,14 +19,6 @@ char *str_concat(char *s1, char *s2)
 	int len2;
 	int j;
 
-	if (s1 == NULL)
-	{
-		*s1 = '\0';
-	}
-	if (s2 == NULL)
-	{
-		*s2 = '\0';
-	}
 	i = 0;
 	j = 0;
 
@@ -42,7 +34,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s1 == NULL)
 		{
-			continue;
 		}
 		else
 		{
@@ -54,7 +45,6 @@ char *str_concat(char *s1, char *s2)
 		}
 		if (s2 == NULL)
 		{
-			continue;
 		}
 		else
 		{
