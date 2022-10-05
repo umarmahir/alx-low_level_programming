@@ -40,15 +40,29 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		while (s1[i] != '\0')
+		if (s1 == NULL)
 		{
-			t[i] = s1[i];
-			i++;
+			continue;
 		}
-		while (s2[j] != '\0')
+		else
 		{
-			t[i + j] = s2[j];
-			j++;
+			while (s1[i] != '\0')
+			{
+				t[i] = s1[i];
+				i++;
+			}
+		}
+		if (s2 == NULL)
+		{
+			continue;
+		}
+		else
+		{
+			while (s2[j] != '\0')
+			{
+				t[i + j] = s2[j];
+				j++;
+			}
 		}
 		return (t);
 	}
