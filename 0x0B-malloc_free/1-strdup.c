@@ -21,17 +21,20 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	i = 0;
-	len = strlen(str);
+	len = strlen(str) + 1;
+
 	t = malloc(len);
-	while (str[i] != '\0')
-	{
-		t[i] = str[i];
-		i++;
-	}
 	if (t == NULL)
 	{
 		return (NULL);
 	}
 	else
+	{
+		while (str[i] != '\0')
+		{
+			t[i] = str[i];
+			i++;
+		}
 		return (t);
+	}
 }
