@@ -4,28 +4,43 @@
 
 
 /**
- * _calloc - Entry point
- *
- * Description: 'A program that allocates memory and sets it to 0'
- * @nmemb: The number of array members
- * @size: size of the elements in memory each
- * Return: Always 0 (Success)
+ * *_memset - fills memory with a constant byte.
+ * @s: pointer to put the constant
+ * @b: constant
+ * @n: max bytes to use
+ * Return: s
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	char *ptr = s;
+
+	while (n--)
+		*s++ = b;
+
+	return (ptr);
+}
+
+/**
+ * *_calloc - allocates memory for an array, using malloc
+ * @nmemb: array length
+ * @size: size of each element
+ * Return: pointer
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
-	char *t;
+	void *m;
 
-	if (nmemb == 0 || size == 0)
+	if (size == 0 || nmemb == 0)
 		return (NULL);
 
-	t = malloc(nmemb * size);
-	if (t == NULL)
+	m = malloc(nmemb * size);
+
+	if (m == 0)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-		t[i] = 0;
+	_memset(m, 0, nmemb * size);
 
-	return (t);
+	return (m);
 }
