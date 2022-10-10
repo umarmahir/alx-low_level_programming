@@ -1,4 +1,5 @@
-#pragma once
+#ifndef FILE_DOG
+#define FILE_DOG
 
 /**
  * struct dog - Short description
@@ -16,3 +17,5 @@ char *owner;
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+
+#endif
