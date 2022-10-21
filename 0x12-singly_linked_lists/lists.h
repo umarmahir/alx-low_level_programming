@@ -1,8 +1,13 @@
-#ifndef _LISTS_H
-#define _LISTS_H
+#ifndef LISTS_H
+#define LISTS_H
 
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
+/*
+ * File: lists.h
+ * Desc: Header file containing prototypes and definitions for all functions
+ *       and types written in the 0x11-singly_linked_lists directory.
+ */
+
+#include <stdlib.h>
 
 /**
  * struct list_s - singly linked list
@@ -11,6 +16,7 @@ size_t list_len(const list_t *h);
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ *              for Holberton project
  */
 typedef struct list_s
 {
@@ -19,4 +25,10 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-#endif
+size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str);
+void free_list(list_t *head);
+
+#endif /* LISTS_H */
