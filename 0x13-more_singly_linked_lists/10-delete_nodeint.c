@@ -10,37 +10,31 @@
  * Return: On success - 1.
  *         On failure - -1.
  */
-
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	int i;
-	listint_t *ptr, *tmp,*ad;
+	listint_t *tmp, *copy = *head;
+	unsigned int node;
 
-	i = 0;
-	ptr = *head;
-	while (ptr)
-	{
-		if (index == 0)
-		{
-			*head = ptr->next;
-			free(ptr);
-			return (1);
-		}
-		if (i == (index - 1))
-		{
-			break;
-		}
-		else
-		{
-			ptr = ptr->next;
-			i++;
-		}
-	}
-	if ((index >= i + 1) || (index < 0) || (*head == NULL))
+	if (copy == NULL)
 		return (-1);
-	tmp = ptr->next;
-	ad = tmp->next;
-	ptr->next = ad;
+
+	if (index == 0)
+	{
+		*head = (*head)->next;
+		free(copy);
+		return (1);
+	}
+
+	for (node = 0; node < (index - 1); node++)
+	{
+		if (copy->next == NULL)
+			return (-1);
+
+		copy = copy->next;
+	}
+
+	tmp = copy->next;
+	copy->next = tmp->next;
 	free(tmp);
 	return (1);
 }
