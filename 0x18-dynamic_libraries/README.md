@@ -1,0 +1,1 @@
+Hi. This is a folder to learn and practice dynamic library creation
